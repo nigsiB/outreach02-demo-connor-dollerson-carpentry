@@ -25,9 +25,9 @@ export default function ContactPage() {
               <Image
                 src="/logo-black.png"
                 alt="Think Outside The Box Carpentry"
-                width={343}
-                height={82}
-                className="h-[4.68rem] w-auto sm:h-[5.15rem]"
+                width={686}
+                height={164}
+                className="h-[9.36rem] w-auto sm:h-[10.3rem]"
               />
             </div>
             <h1 className="font-serif text-center text-3xl text-[var(--wood)]">Contact</h1>
