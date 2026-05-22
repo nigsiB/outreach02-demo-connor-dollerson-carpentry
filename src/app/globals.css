@@ -1,5 +1,6 @@
 @import "tailwindcss";
 :root{--wood:#2c2419;--warm:#d4a574;--paper:#f5f0e8;--heading:var(--wood);--muted:#6b6358;--bg-card:#fff;--bg-trust:#f0ebe3;--bg-services:#f5f0e8;--bg-about:#ebe5dc;--bg-reviews:#ede8e0;--bg-gallery:#f5f0e8;--border-subtle:rgba(44,36,25,.12)}
+html{scrollbar-gutter:stable}
 body{margin:0;background:var(--paper);font-family:var(--font-body),sans-serif}
 .font-serif{font-family:var(--font-serif),serif}
 .form-input{width:100%;border-bottom:1px solid #ccc;background:transparent;padding:.6rem 0}

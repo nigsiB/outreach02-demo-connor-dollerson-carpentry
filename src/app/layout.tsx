@@ -20,18 +20,21 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en" className={`${serif.variable} ${font.variable}`}>
       <body className="flex min-h-screen flex-col antialiased">
         <header className="border-b border-white/10 bg-black text-[var(--paper)]">
-          <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-            <Link href="/" className="block shrink-0">
+          <div className="mx-auto flex h-[5.5rem] max-w-6xl items-center justify-between px-6 sm:h-[5.9rem]">
+            <Link
+              href="/"
+              className="flex h-[3.9rem] w-[14.5rem] shrink-0 items-center sm:h-[4.29rem] sm:w-[16rem]"
+            >
               <Image
                 src="/logo-white.png"
                 alt="Think Outside The Box Carpentry"
                 width={343}
                 height={82}
-                className="h-[3.9rem] w-auto sm:h-[4.29rem]"
+                className="h-full w-auto max-w-full object-contain object-left"
                 priority
               />
             </Link>
-            <nav className="flex gap-6 text-sm font-medium">
+            <nav className="flex shrink-0 gap-6 text-sm font-medium">
               <Link href="/contact" className="opacity-90 transition-opacity hover:opacity-100">
                 Contact
               </Link>

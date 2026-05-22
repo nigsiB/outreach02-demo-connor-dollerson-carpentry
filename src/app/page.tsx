@@ -3,12 +3,12 @@ import Link from "next/link";
 import { CtaBand } from "@/components/CtaBand";
 import { ServiceCard } from "@/components/ServiceCard";
 
-const heroImg = "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=1600&q=80";
+const heroImg = "https://images.unsplash.com/photo-1497219055242-93359eeed651?auto=format&fit=crop&w=1600&q=80";
 const aboutImg = "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1600&q=80";
 const galleryImg = "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=crop&w=1600&q=80";
 
 const services = [
-  { image: "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=600&q=80", alt: "Bespoke wooden furniture", title: "Bespoke furniture", desc: "Tables, shelving, and one-off pieces built to your space." },
+  { image: "https://images.unsplash.com/photo-1497219055242-93359eeed651?auto=format&fit=crop&w=600&q=80", alt: "Hand-crafted woodwork detail", title: "Bespoke furniture", desc: "Tables, shelving, and one-off pieces built to your space." },
   { image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80", alt: "Interior doors and joinery", title: "Doors & joinery", desc: "Internal doors, frames, and precision fitting." },
   { image: "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=crop&w=600&q=80", alt: "Kitchen woodwork details", title: "Kitchen details", desc: "Solid wood worktops, pantry units, and custom storage." },
   { image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80", alt: "Garden timber structure", title: "Garden structures", desc: "Pergolas, gates, and outdoor timber features." },
@@ -24,7 +24,7 @@ export default function Page() {
   return (
     <main>
       <section className="relative min-h-[85vh]">
-        <Image src={heroImg} alt="Bespoke woodwork in workshop" fill className="object-cover" priority sizes="100vw" />
+        <Image src={heroImg} alt="Woodworker carving timber with a chisel" fill className="object-cover" priority sizes="100vw" />
         <div className="absolute inset-0 bg-gradient-to-t from-[var(--wood)] via-[var(--wood)]/55 to-[var(--wood)]/15" />
         <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-12 lg:p-16">
           <div className="max-w-2xl rounded-sm border border-[var(--paper)]/10 bg-[var(--wood)]/92 p-8 shadow-xl backdrop-blur-sm md:p-10">

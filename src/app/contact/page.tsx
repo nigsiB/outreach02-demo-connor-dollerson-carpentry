@@ -1,19 +1,43 @@
 import Image from "next/image";
 import { ContactForm } from "@/components/ContactForm";
 
+const workshopImg =
+  "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=crop&w=1200&q=80";
+
 export default function ContactPage() {
   return (
-    <main className="mx-auto max-w-lg px-6 py-14">
-      <Image
-        src="/logo-black.png"
-        alt="Think Outside The Box Carpentry"
-        width={216}
-        height={53}
-        className="mb-8 h-[2.7rem] w-auto"
-      />
-      <h1 className="font-serif text-3xl text-[var(--wood)]">Contact</h1>
-      <p className="mt-2 text-sm opacity-70">Demo enquiry form.</p>
-      <div className="mt-8"><ContactForm /></div>
+    <main className="flex-1">
+      <div className="grid min-h-[calc(100svh-5.5rem)] lg:min-h-[calc(100svh-5.9rem)] lg:grid-cols-2">
+        <div className="relative min-h-[min(50vw,28rem)] lg:min-h-0 lg:h-full">
+          <Image
+            src={workshopImg}
+            alt="Carpentry workshop and timber craftsmanship"
+            fill
+            className="object-cover"
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            priority
+          />
+        </div>
+
+        <div className="flex flex-col justify-center bg-[var(--paper)] px-6 py-12 sm:px-10 lg:px-14 lg:py-16">
+          <div className="mx-auto flex w-full max-w-md flex-col">
+            <div className="mb-8 flex justify-center">
+              <Image
+                src="/logo-black.png"
+                alt="Think Outside The Box Carpentry"
+                width={343}
+                height={82}
+                className="h-[4.68rem] w-auto sm:h-[5.15rem]"
+              />
+            </div>
+            <h1 className="font-serif text-center text-3xl text-[var(--wood)]">Contact</h1>
+            <p className="mt-2 text-center text-sm opacity-70">Demo enquiry form.</p>
+            <div className="mt-8">
+              <ContactForm />
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
