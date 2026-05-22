@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { ContactForm } from "@/components/ContactForm";
 
-const workshopImg =
-  "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=crop&w=1200&q=80";
+const woodTextureImg =
+  "https://images.unsplash.com/photo-1763392199096-6efd9d28d8cc?auto=format&fit=crop&w=1200&q=80";
 
 export default function ContactPage() {
   return (
@@ -10,8 +10,8 @@ export default function ContactPage() {
       <div className="grid min-h-[calc(100svh-5.5rem)] lg:min-h-[calc(100svh-5.9rem)] lg:grid-cols-2">
         <div className="relative min-h-[min(50vw,28rem)] lg:min-h-0 lg:h-full">
           <Image
-            src={workshopImg}
-            alt="Carpentry workshop and timber craftsmanship"
+            src={woodTextureImg}
+            alt="Close-up of natural wood grain texture"
             fill
             className="object-cover"
             sizes="(max-width: 1024px) 100vw, 50vw"
